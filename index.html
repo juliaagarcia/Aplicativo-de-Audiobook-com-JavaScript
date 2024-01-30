@@ -6,19 +6,22 @@
     <title>AudioBook D.C.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
 </head>
 <body>
-    <img src="images/dom-casmurro.jpeg" alt="Dom casmurro">
-    <div id="informacoes-faixa">
-    <p>Capítulo 1</p>
-    <p>Machado de Assis</p>
-    </div>
-
-    <div id="container-butoes">
-        <button class="bi bi-skip-backward-circle"></button>
-        <button class="bi bi-play-circle"></button>
-        <button class="bi bi-skip-end"></button>
-    </div>
-
+    <div class="container-aplicativo">
+        <img src="images/dom-casmurro.jpeg" alt="Dom casmurro">
+        <div id="informacoes-faixa">
+            <p id="capitulo">Capítulo 1</p>
+            <p id="nome-autor">Machado de Assis</p>
+        </div>
+        <audio id="audio-capitulo" src="./books/dom-casmurro/1.mp3"></audio>
+        <div id="container-butoes">
+            <button id="anterior" class="bi bi-skip-backward-circle"></button>
+            <button id="play-pause" class="bi bi-play-circle"></button>
+            <button id="proximo" class="bi bi-skip-forward-circle"></button>
+        </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
